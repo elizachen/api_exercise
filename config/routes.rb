@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :cities do
     member do
@@ -17,5 +18,7 @@ Rails.application.routes.draw do
       delete "/reservations/:booking_code" => "reservations#destroy", :as => :cancel_reservation
     end
   end
+
+  root "welcome#index"
 
 end
