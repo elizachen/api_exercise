@@ -34,6 +34,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'
 gem 'rest-client'
 gem 'devise'
+#gem 'carriewave'
+gem 'carrierwave', '~> 0.9.0'
+#gem 'mini_magick'
+gem 'mini_magick', github: 'minimagick/minimagick', ref: '6d0f8f953112cce6324a524d76c7e126ee14f392'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
