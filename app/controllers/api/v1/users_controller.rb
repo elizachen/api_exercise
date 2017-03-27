@@ -2,7 +2,7 @@ class Api::V1::UsersController < ApiController
 
   before_action :authenticate_user!
 
-  def update_temp
+  def update
     if current_user.update(user_params)
       render :json => { :message => "OK" }
     else

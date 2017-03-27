@@ -24,6 +24,7 @@ Rails.application.routes.draw do
 
       get "/me" => "users#show", :as => :user
       patch "/me" => "users#update", :as => :update_user
+  
     end
   end
 
